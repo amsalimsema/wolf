@@ -1,0 +1,80 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: rgb(220, 220, 220);
+}
+.boost-wrap {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+}
+.boost-left,
+.boost-right {
+  flex: 50%;
+  padding: 20px;
+}
+.boost-right img {
+  height: 100%;
+  width: 100%;
+}
+.boost-left h2 {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 50px;
+}
+.boost-left p {
+  font-size: 20px;
+}
+.boost-left-btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(218, 20, 119);
+  border: 0;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.boost-left #call #Tel {
+  font-weight: bold;
+}
+.boost-left #Tel {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+@media (max-width: 820px) {
+  .boost-wrap {
+    height: auto;
+    width: 100%;
+    margin: auto;
+  }
+  .boost-left h2 {
+    font-weight: 700;
+    font-size: 35px;
+  }
+}
+@media (max-width: 650px) {
+  .boost-wrap {
+    flex-direction: column;
+    height: auto;
+    width: 95%;
+    margin: auto;
+  }
+  .boost-left,
+  .boost-right {
+    flex: 100%;
+    padding: 10px;
+  }
+  .boost-left h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .boost-left p {
+    font-size: 18px;
+  }
+}

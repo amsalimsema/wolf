@@ -1,0 +1,53 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+.footer-wrap {
+  background-color: black;
+  padding: 40px 0;
+}
+.footer {
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.footer p {
+  margin: 0;
+  padding: 0;
+}
+.footer #footer-bold {
+  font-weight: bold;
+  font-size: 18px;
+}
+.footer #footer-normal {
+  color: grey;
+}
+.footer-logo,
+.footer-contact,
+.footer-company,
+.footer-follow,
+.footer-operating {
+  flex: 16%;
+}
+.footer-logo img {
+  height: 40px;
+  width: 40px;
+}
+.footer-wrap #footer-copy {
+  text-align: center;
+  color: grey;
+  margin-top: 50px;
+}
+@media (max-width: 820px) {
+  .footer {
+    width: 95%;
+  }
+}
+@media (max-width: 650px) {
+  .footer {
+    flex-direction: column;
+  }
+}
