@@ -1,0 +1,104 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+/* intro */
+.intro-info {
+  text-align: center;
+  padding: 0 100px;
+}
+.intro h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+.intro p {
+  font-size: 18px;
+}
+/* core values */
+.core {
+  background-color: black;
+  margin-bottom: 20px;
+}
+
+.core h3 {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+.core h2 {
+  color: grey;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+}
+.core-wrap {
+  padding-bottom: 20px;
+}
+.core-one,
+.core-two,
+.core-three {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  margin: 0 5px;
+}
+/* founder - mission */
+#founder-header,
+#mission-header {
+  font-weight: 700;
+  font-size: 30px;
+}
+.founder-wrap,
+.mission-wrap,
+.core-wrap,
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+/* media queries */
+@media (max-width: 820px) {
+  .founder-wrap,
+  .mission-wrap,
+  .intro {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  .founder-wrap {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+  .mission-wrap,
+  .core-wrap,
+  .intro {
+    flex-direction: column;
+    width: 90%;
+  }
+  .core-one,
+  .core-two,
+  .core-three {
+    border: 0;
+  }
+  .core h2,
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .intro-info {
+    padding: 0;
+  }
+  .intro h1 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .intro p {
+    font-size: 18px;
+  }
+}
