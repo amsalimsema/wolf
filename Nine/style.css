@@ -3,12 +3,12 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
+  background-color: rgb(252, 246, 252);
 }
-
 .features {
   width: 80%;
-  min-height: fit-content;
   margin: 50px auto;
+  height: fit-content;
 }
 
 input[type="radio"] {
@@ -31,41 +31,29 @@ label {
   border-radius: 5px;
 }
 .tile div {
-  width: 50%;
-  padding: 20px;
+  width: 100%;
+  padding: 10px;
 }
 .tile img {
   width: 100%;
 }
-.tile #muted {
-  color: gray;
-  margin-bottom: 10px;
-  margin-left: 25px;
-  font-size: 18px;
-}
-.tile #title {
-  font-weight: bold;
-}
+
 .tile h2 {
   font-size: 30px;
   font-weight: 900;
 }
-.tile p {
-  font-size: 20px;
-}
 
-.tile p,
-h2 {
-  margin: 0;
-  padding: 0;
-}
 .tile {
   width: 100%;
-  height: fit-content;
+  height: auto;
   display: flex;
+  /* float: left; */
   transition: all 1s;
   margin: 0.5%;
   padding: 0.5%;
+}
+.tile img {
+  border-radius: 5px;
 }
 
 .blue,
@@ -141,10 +129,6 @@ input[type="radio"][id="green"]:checked ~ .reset {
   .tile {
     height: auto;
   }
-  .tile #muted {
-    margin-left: 15px;
-    font-size: 16px;
-  }
 }
 
 @media (max-width: 650px) {
@@ -152,18 +136,13 @@ input[type="radio"][id="green"]:checked ~ .reset {
     flex-direction: column;
     height: auto;
     margin: 10px 0;
-    padding: 0;
   }
   .features {
-    width: 95%;
-    overflow-x: hidden;
+    width: 90%;
+    margin: auto;
   }
   .tile div {
-    width: 95%;
-    padding: 10px;
-  }
-  .tile #muted {
-    margin-left: 15px;
+    padding: 0px;
   }
 
   label {
