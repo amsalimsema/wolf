@@ -17,7 +17,6 @@ input[type="radio"] {
 
 label {
   width: fit-content;
-  /* width: 23%; */
   float: left;
   text-align: center;
   background: #ffffff;
@@ -47,8 +46,7 @@ label {
   width: 100%;
   height: auto;
   display: flex;
-  /* float: left; */
-  transition: all 1s;
+  transition: 0.6s all;
   margin: 0.5%;
   padding: 0.5%;
 }
@@ -56,20 +54,20 @@ label {
   border-radius: 5px;
 }
 
-.blue,
-.green,
-.red,
-.reset {
+.one,
+.three,
+.two,
+.four {
   border-radius: 10px;
 }
-/* reset */
-input[type="radio"][id="reset"]:checked + label {
+/* four */
+input[type="radio"][id="four"]:checked + label {
   background: black;
   color: #fff;
 }
-input[type="radio"][id="reset"]:checked ~ .red,
-input[type="radio"][id="reset"]:checked ~ .green,
-input[type="radio"][id="reset"]:checked ~ .blue {
+input[type="radio"][id="four"]:checked ~ .two,
+input[type="radio"][id="four"]:checked ~ .three,
+input[type="radio"][id="four"]:checked ~ .one {
   width: 0;
   height: 0;
   padding: 0;
@@ -78,39 +76,39 @@ input[type="radio"][id="reset"]:checked ~ .blue {
 }
 /* end */
 
-input[type="radio"][id="blue"]:checked + label {
+input[type="radio"][id="one"]:checked + label {
   background: black;
   color: #fff;
 }
-input[type="radio"][id="blue"]:checked ~ .red,
-input[type="radio"][id="blue"]:checked ~ .green,
-input[type="radio"][id="blue"]:checked ~ .reset {
+input[type="radio"][id="one"]:checked ~ .two,
+input[type="radio"][id="one"]:checked ~ .three,
+input[type="radio"][id="one"]:checked ~ .four {
   width: 0;
   height: 0;
   padding: 0;
   margin: 0;
   opacity: 0;
 }
-input[type="radio"][id="red"]:checked + label {
+input[type="radio"][id="two"]:checked + label {
   background: black;
   color: #fff;
 }
-input[type="radio"][id="red"]:checked ~ .blue,
-input[type="radio"][id="red"]:checked ~ .green,
-input[type="radio"][id="red"]:checked ~ .reset {
+input[type="radio"][id="two"]:checked ~ .one,
+input[type="radio"][id="two"]:checked ~ .three,
+input[type="radio"][id="two"]:checked ~ .four {
   width: 0;
   height: 0;
   padding: 0;
   margin: 0;
   opacity: 0;
 }
-input[type="radio"][id="green"]:checked + label {
+input[type="radio"][id="three"]:checked + label {
   background: black;
   color: #fff;
 }
-input[type="radio"][id="green"]:checked ~ .blue,
-input[type="radio"][id="green"]:checked ~ .red,
-input[type="radio"][id="green"]:checked ~ .reset {
+input[type="radio"][id="three"]:checked ~ .one,
+input[type="radio"][id="three"]:checked ~ .two,
+input[type="radio"][id="three"]:checked ~ .four {
   width: 0;
   height: 0;
   padding: 0;

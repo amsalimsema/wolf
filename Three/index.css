@@ -68,20 +68,20 @@ h2 {
   padding: 0.5%;
 }
 
-.blue,
-.green,
-.red,
-.reset {
+.featureOne,
+.featureThree,
+.featureTwo,
+.featureFour {
   border-radius: 10px;
 }
-/* reset */
-input[type="radio"][id="reset"]:checked + label {
+/* featureFour */
+input[type="radio"][id="featureFour"]:checked + label {
   background: black;
   color: #fff;
 }
-input[type="radio"][id="reset"]:checked ~ .red,
-input[type="radio"][id="reset"]:checked ~ .green,
-input[type="radio"][id="reset"]:checked ~ .blue {
+input[type="radio"][id="featureFour"]:checked ~ .featureTwo,
+input[type="radio"][id="featureFour"]:checked ~ .featureThree,
+input[type="radio"][id="featureFour"]:checked ~ .featureOne {
   width: 0;
   height: 0;
   padding: 0;
@@ -90,39 +90,39 @@ input[type="radio"][id="reset"]:checked ~ .blue {
 }
 /* end */
 
-input[type="radio"][id="blue"]:checked + label {
+input[type="radio"][id="featureOne"]:checked + label {
   background: black;
   color: #fff;
 }
-input[type="radio"][id="blue"]:checked ~ .red,
-input[type="radio"][id="blue"]:checked ~ .green,
-input[type="radio"][id="blue"]:checked ~ .reset {
+input[type="radio"][id="featureOne"]:checked ~ .featureTwo,
+input[type="radio"][id="featureOne"]:checked ~ .featureThree,
+input[type="radio"][id="featureOne"]:checked ~ .featureFour {
   width: 0;
   height: 0;
   padding: 0;
   margin: 0;
   opacity: 0;
 }
-input[type="radio"][id="red"]:checked + label {
+input[type="radio"][id="featureTwo"]:checked + label {
   background: black;
   color: #fff;
 }
-input[type="radio"][id="red"]:checked ~ .blue,
-input[type="radio"][id="red"]:checked ~ .green,
-input[type="radio"][id="red"]:checked ~ .reset {
+input[type="radio"][id="featureTwo"]:checked ~ .featureOne,
+input[type="radio"][id="featureTwo"]:checked ~ .featureThree,
+input[type="radio"][id="featureTwo"]:checked ~ .featureFour {
   width: 0;
   height: 0;
   padding: 0;
   margin: 0;
   opacity: 0;
 }
-input[type="radio"][id="green"]:checked + label {
+input[type="radio"][id="featureThree"]:checked + label {
   background: black;
   color: #fff;
 }
-input[type="radio"][id="green"]:checked ~ .blue,
-input[type="radio"][id="green"]:checked ~ .red,
-input[type="radio"][id="green"]:checked ~ .reset {
+input[type="radio"][id="featureThree"]:checked ~ .featureOne,
+input[type="radio"][id="featureThree"]:checked ~ .featureTwo,
+input[type="radio"][id="featureThree"]:checked ~ .featureFour {
   width: 0;
   height: 0;
   padding: 0;
